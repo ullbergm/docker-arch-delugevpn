@@ -22,6 +22,7 @@ RUN 	pacman -S --noconfirm --needed ffmpeg python-pip && \
 	pip install babelfish && \
 	pip install "guessit<2" && \
 	pip install deluge-client && \
+	pip install gevent && \
 	pip install qtfaststart && \
 	pip install "subliminal<2" && \
-	pip install stevedore==1.19.1 
+	pip install stevedore==1.19.1
