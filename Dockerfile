@@ -15,14 +15,14 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
     org.label-schema.schema-version="1.0"
 
 # install compiled packages using pacman
-RUN 	pacman -S --noconfirm --needed ffmpeg python-pip && \
-	pip install requests && \
-	pip install requests[security] && \
-	pip install requests-cache && \
-	pip install babelfish && \
-	pip install "guessit<2" && \
-	pip install deluge-client && \
-	pip install gevent && \
-	pip install qtfaststart && \
-	pip install "subliminal<2" && \
-	pip install stevedore==1.19.1
+RUN 	pacman -S --noconfirm --needed ffmpeg python2-pip && \
+	pip2 install requests && \
+	pip2 install requests[security] && \
+	pip2 install requests-cache && \
+	pip2 install babelfish && \
+	pip2 install "guessit<2" && \
+	pip2 install deluge-client && \
+	pip2 install gevent && \
+	pip2 install qtfaststart && \
+	pip2 install "subliminal<2" && \
+	pip2 install stevedore==1.19.1
